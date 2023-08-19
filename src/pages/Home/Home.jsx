@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import MovieService from "../../api/MovieService";
+import {MovieService} from "../../api/MovieService";
 
 const Home = () => {
   const [movies, setMovies] = useState([])
