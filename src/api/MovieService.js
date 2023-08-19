@@ -17,3 +17,4 @@ export class MovieService {
         return axios(whithBaseUrl("search/movie") + `&query=${movie}`);
     }
 }
+export default MovieService

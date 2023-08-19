@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
-import Home from './pages/Home/Home.jsx'
+import Home from './pages/Home/Home.jsx';
+import MovieDetail from '../src/pages/MovieDetail/MovielDetail.jsx';
 import './index.scss';
 import {
   createBrowserRouter,
@@ -12,10 +13,16 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [{
+    children: [
+      {
       path: "",
       element: <Home />
-    }]
+      },
+      {
+        path: "/movie/:id",
+        element: <MovieDetail />
+      }
+  ]
   },
 ]);
 
