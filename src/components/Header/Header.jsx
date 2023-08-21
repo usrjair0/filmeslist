@@ -1,5 +1,6 @@
 const Header = () => {
-
+//prevent Default é um método javascript que previne que a página seja recarregada quando 
+//faço o envio de um form 
 const HanddleSubmit = (event)=>{
   event.preventDefault();
 }
