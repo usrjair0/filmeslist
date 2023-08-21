@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const MovieCard = () => {
   return (
     <div className="MovieCard">
