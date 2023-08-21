@@ -15,10 +15,6 @@ const MovielDetail = () => {
     getMovie();
   }, []);
 
-  useEffect(()=>{
-    console.log(movie)
-  })
-
   return (
     <section className="MovieDetail">
       <div className="MovieDetail__container">
