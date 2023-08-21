@@ -1,4 +1,24 @@
+import { useEffect, useState } from "react";
+import { Link, useParams } from 'react-router-dom'
+import { MovieService } from "../../api/MovieService";
+
 const MovielDetail = () => {
+  const {id} = useParams();
+  const [movie, setMovie] = useState({});
+
+  async function getMovie(){
+    const {data} = await MovieService.getMovieDetails(id);
+    setMovie(data);
+  }
+
+  useEffect(()=>{
+    getMovie();
+  }, []);
+
+  useEffect(()=>{
+    console.log(movie)
+  })
+
   return (
     <section className="MovieDetail">
       <div className="MovieDetail__container">
