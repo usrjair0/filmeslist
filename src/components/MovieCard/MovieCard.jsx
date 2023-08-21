@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const MovieCard = () => {
+const MovieCard = ({movieProp}) => {
   return (
     <div className="MovieCard">
       <div className="movie-image">
