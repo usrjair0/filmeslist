@@ -13,8 +13,18 @@
       padding: 0.5rem 1rem;
       border-radius: 15px;
       border: none;
+      width: 250px;
     }
-  
+    button {
+      background-color: white;
+      font-size: 1rem;
+      margin-left: 20px;
+      border-radius: 20px;
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+    }
+
     input:focus {
       border: none;
       outline: none;
