@@ -18,7 +18,6 @@ const Home = ({searchValueprop}) => {
     const {
       data: {results}, 
     } = await MovieService.searchMovies(movieString);
-
     setMovies(results);
   }
   
