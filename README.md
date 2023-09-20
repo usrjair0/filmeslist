@@ -1,3 +1,3 @@
 # Lista de filmes 
-link site funcionando: https://filmeslist.vercel.app/
+link para o site funcionando: https://filmeslist.vercel.app/
 
